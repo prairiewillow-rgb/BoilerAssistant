@@ -1,0 +1,7 @@
+# Bundled Arduino toolchain is too large for git; distribute separately.
+BoilerAssistant-Updater/tools/
+
+# Arduino build output
+build/
+*.hex
+!BoilerAssistant-Updater/firmware/*.hex

@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Arduino: Verify UNO R4 WiFi",
+            "type": "process",
+            "command": "C:\\Program Files\\Arduino IDE\\resources\\app\\lib\\backend\\resources\\arduino-cli.exe",
+            "args": [
+                "compile",
+                "--fqbn",
+                "arduino:renesas_uno:unor4wifi",
+                "${workspaceFolder}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Arduino: Upload UNO R4 WiFi",
+            "type": "process",
+            "command": "C:\\Program Files\\Arduino IDE\\resources\\app\\lib\\backend\\resources\\arduino-cli.exe",
+            "args": [
+                "upload",
+                "--fqbn",
+                "arduino:renesas_uno:unor4wifi",
+                "--port",
+                "${input:arduinoPort}",
+                "${workspaceFolder}"
+            ],
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "arduinoPort",
+            "type": "promptString",
+            "description": "Arduino serial port, for example COM5",
+            "default": "COM5"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Arduino UNO R4 WiFi",
+            "compilerPath": "C:/Users/Karl/AppData/Local/Arduino15/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/bin/arm-none-eabi-g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-arm",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/Karl/AppData/Local/Arduino15/packages/arduino/hardware/renesas_uno/1.6.0/cores/arduino",
+                "C:/Users/Karl/AppData/Local/Arduino15/packages/arduino/hardware/renesas_uno/1.6.0/variants/UNOWIFIR4",
+                "C:/Users/Karl/AppData/Local/Arduino15/packages/arduino/hardware/renesas_uno/1.6.0/libraries/**",
+                "C:/Users/Karl/AppData/Local/Arduino15/packages/arduino/libraries/**"
+            ],
+            "defines": [
+                "ARDUINO=10819",
+                "ARDUINO_ARCH_RENESAS"
+            ]
+        }
+    ],
+    "version": 4
+}
